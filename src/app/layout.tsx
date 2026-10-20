@@ -20,6 +20,15 @@ export const metadata: Metadata = {
   title: "FORMA Athletic Club | Boutique Strength & Conditioning Gym in East Austin",
   description:
     "FORMA is a boutique training club in East Austin. Coached strength, conditioning, boxing and recovery classes capped at 14 people. Your first week is free.",
+  robots: { index: true, follow: true },
+  openGraph: {
+    title: "FORMA Athletic Club",
+    description:
+      "Boutique strength & conditioning club in East Austin. Coached classes capped at 14. Your first week is free.",
+    type: "website",
+    locale: "en_US",
+    siteName: "FORMA Athletic Club",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

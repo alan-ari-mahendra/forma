@@ -1,0 +1,978 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FORMA Athletic Club | Boutique Strength &amp; Conditioning Gym in East Austin</title>
+<meta name="description" content="FORMA is a boutique training club in East Austin. Coached strength, conditioning, boxing and recovery classes capped at 14 people. Your first week is free.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;0,800;1,700;1,800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExerciseGym",
+  "name": "FORMA Athletic Club",
+  "description": "Boutique strength and conditioning club with coached small-group classes.",
+  "telephone": "+1-512-555-0147",
+  "address": {"@type": "PostalAddress","streetAddress": "1180 E 6th St","addressLocality": "Austin","addressRegion": "TX","postalCode": "78702","addressCountry": "US"},
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens": "05:30","closes": "22:00"},
+    {"@type": "OpeningHoursSpecification","dayOfWeek": ["Saturday","Sunday"],"opens": "07:00","closes": "18:00"}
+  ],
+  "priceRange": "$$"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question","name": "I have never trained before. Is FORMA right for me?","acceptedAnswer": {"@type": "Answer","text": "Yes. Every class is coached and every movement has a scaled version. Your first visit includes a 20-minute onboarding with a coach."}},
+    {"@type": "Question","name": "How does the free trial week work?","acceptedAnswer": {"@type": "Answer","text": "New members get 7 days of unlimited classes. No card is required to book, and there is no automatic renewal."}},
+    {"@type": "Question","name": "How big are the classes?","acceptedAnswer": {"@type": "Answer","text": "Classes are capped at 14 people so a coach can see and correct every rep."}},
+    {"@type": "Question","name": "Can I freeze or cancel my membership?","acceptedAnswer": {"@type": "Answer","text": "Yes. Freeze up to 2 months per year, or cancel anytime with 30 days notice."}},
+    {"@type": "Question","name": "Is there parking?","acceptedAnswer": {"@type": "Answer","text": "Free member parking is available behind the building, plus secure bike racks at the entrance."}}
+  ]
+}
+</script>
+
+<style>
+:root{
+  --dark:#0F0F0F;
+  --dark-2:#1A1A1A;
+  --dark-3:#242424;
+  --light:#F1F0EC;
+  --card:#FFFFFF;
+  --ink:#111111;
+  --ink-2:#4A4945;
+  --muted:#6B6A65;
+  --line:#DCDAD4;
+  --line-d:rgba(255,255,255,.14);
+  --volt:#D4FF3F;
+  --volt-ink:#0F0F0F;
+  --display:"Barlow Condensed","Arial Narrow",sans-serif;
+  --sans:"Barlow","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);font-size:16px;line-height:1.6;color:var(--ink);background:var(--light);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+.wrap{width:min(1240px,calc(100% - 48px));margin:0 auto}
+.disp{font-family:var(--display);font-weight:800;text-transform:uppercase;line-height:.9;letter-spacing:-.01em}
+.label{font-family:var(--display);font-weight:600;font-size:13px;letter-spacing:.2em;text-transform:uppercase}
+.mark{background:var(--volt);color:var(--volt-ink);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid transparent;transition:.2s}
+.btn svg{width:18px;height:18px}
+.btn-volt{background:var(--volt);color:var(--volt-ink)}
+.btn-volt:hover{background:#E4FF7A}
+.btn-line-l{border-color:#fff;color:#fff}
+.btn-line-l:hover{background:#fff;color:var(--ink)}
+.btn-line{border-color:var(--ink);color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#2A2A2A}
+section{position:relative}
+.dark{background:var(--dark);color:#fff}
+.ph{position:relative;overflow:hidden;background:linear-gradient(135deg,#2B2B2B,#161616 60%,#222);}
+.ph::before{content:attr(data-label);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;font-family:var(--display);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.35)}
+.ph.lt{background:linear-gradient(135deg,#D9D7D0,#C9C7BF)}
+.ph.lt::before{color:rgba(0,0,0,.35)}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:56px}
+.sec-head h2{font-size:clamp(48px,6vw,88px)}
+.sec-head p{max-width:400px;color:var(--ink-2)}
+.dark .sec-head p{color:rgba(255,255,255,.7)}
+.eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:18px;color:var(--ink-2)}
+.eyebrow::before{content:"";width:10px;height:10px;background:var(--volt);outline:1.5px solid var(--ink);outline-offset:0}
+.dark .eyebrow{color:rgba(255,255,255,.7)}
+.dark .eyebrow::before{outline-color:var(--volt)}
+
+/* announcement + nav */
+.announce{background:var(--volt);color:var(--volt-ink);text-align:center;font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:.14em;text-transform:uppercase;padding:9px 16px}
+header{position:absolute;left:0;right:0;top:38px;z-index:20;color:#fff}
+nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 0}
+.logo{font-family:var(--display);font-weight:800;font-size:30px;letter-spacing:.02em;display:flex;align-items:center;gap:10px;line-height:1}
+.logo i{width:26px;height:26px;background:var(--volt);display:inline-block;clip-path:polygon(0 0,100% 0,100% 30%,40% 30%,40% 45%,85% 45%,85% 70%,40% 70%,40% 100%,0 100%)}
+.links{display:flex;gap:34px;font-family:var(--display);font-weight:600;font-size:15px;letter-spacing:.12em;text-transform:uppercase}
+.links a{opacity:.85}.links a:hover{opacity:1;color:var(--volt)}
+.nav-r{display:flex;align-items:center;gap:20px}
+.nav-r .login{font-family:var(--display);font-weight:600;font-size:15px;letter-spacing:.12em;text-transform:uppercase;opacity:.85}
+.nav-r .btn{min-height:46px;padding:0 22px;font-size:15px}
+.burger{display:none;width:46px;height:46px;border:1.5px solid rgba(255,255,255,.4);background:transparent;place-items:center}
+.burger span{display:block;width:18px;height:2px;background:#fff;box-shadow:0 6px 0 #fff,0 -6px 0 #fff}
+
+/* hero */
+.hero{min-height:max(760px,100vh);display:flex;flex-direction:column;justify-content:flex-end;color:#fff;overflow:hidden}
+.hero .bg{position:absolute;inset:0}
+.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.15) 35%,rgba(0,0,0,.35) 60%,rgba(0,0,0,.88) 100%)}
+.hero-inner{position:relative;z-index:2;padding:200px 0 0}
+.hero h1{font-size:clamp(76px,12.5vw,196px);max-width:1100px}
+.hero h1 em{font-style:italic;color:var(--volt)}
+.hero-row{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-top:34px}
+.hero-row p{max-width:460px;font-size:18px;color:rgba(255,255,255,.85)}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-stats{position:relative;z-index:2;margin-top:64px;border-top:1px solid var(--line-d);display:grid;grid-template-columns:repeat(4,1fr)}
+.hero-stats div{padding:24px 24px 30px 0}
+.hero-stats div+div{padding-left:24px;border-left:1px solid var(--line-d)}
+.hero-stats b{display:block;font-family:var(--display);font-weight:800;font-size:44px;line-height:1}
+.hero-stats small{display:block;margin-top:6px;font-size:14px;color:rgba(255,255,255,.7)}
+.hero-stats .stars{color:var(--volt);letter-spacing:2px;font-size:14px}
+
+/* band marquee */
+.band{background:var(--volt);color:var(--volt-ink);overflow:hidden;border-block:1.5px solid var(--ink)}
+.band .track{display:flex;width:max-content;animation:scroll 32s linear infinite}
+.band span{font-family:var(--display);font-weight:800;font-size:44px;text-transform:uppercase;line-height:1;padding:18px 0;display:flex;align-items:center;white-space:nowrap}
+.band span::after{content:"";width:14px;height:14px;background:var(--volt-ink);margin:0 34px;transform:rotate(45deg)}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* intro */
+.intro{padding:140px 0 120px}
+.intro-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:80px;align-items:end}
+.intro h2{font-size:clamp(56px,7.4vw,120px)}
+.intro .lead{font-size:19px;color:var(--ink-2);max-width:560px;margin-top:34px}
+.intro .img{aspect-ratio:4/5}
+.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:90px;border-top:1.5px solid var(--ink)}
+.principles div{padding:30px 30px 0 0}
+.principles div+div{padding-left:30px;border-left:1px solid var(--line)}
+.principles i{font-family:var(--display);font-style:normal;font-weight:800;font-size:15px;letter-spacing:.14em;color:var(--muted)}
+.principles h3{font-family:var(--display);font-weight:800;font-size:34px;text-transform:uppercase;line-height:1;margin:14px 0 12px}
+.principles p{color:var(--ink-2);font-size:15.5px}
+
+/* programs tabs */
+.programs{padding:120px 0;background:var(--card)}
+.tabs{display:flex;gap:0;border-bottom:1.5px solid var(--ink);margin-bottom:0;overflow-x:auto}
+.tab{background:none;border:0;padding:18px 28px;font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);position:relative;white-space:nowrap;min-height:48px}
+.tab[aria-selected="true"]{color:var(--ink);background:var(--volt)}
+.tab:hover{color:var(--ink)}
+.panel{display:grid;grid-template-columns:1.1fr .9fr;gap:0;border:1.5px solid var(--ink);border-top:0}
+.panel[hidden]{display:none}
+.panel .img{min-height:560px}
+.panel .body{padding:56px;display:flex;flex-direction:column}
+.panel h3{font-size:clamp(48px,5vw,76px)}
+.panel .meta{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:30px 0;border-block:1px solid var(--line)}
+.panel .meta div{padding:16px 0}
+.panel .meta div+div{padding-left:18px;border-left:1px solid var(--line)}
+.panel .meta small{display:block;font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.panel .meta b{font-family:var(--display);font-weight:800;font-size:26px;text-transform:uppercase}
+.intensity{display:flex;gap:4px;margin-top:6px}
+.intensity span{width:20px;height:8px;background:var(--line)}
+.intensity span.on{background:var(--ink)}
+.panel p{color:var(--ink-2)}
+.panel ul{list-style:none;margin:22px 0 34px;display:grid;gap:10px}
+.panel li{display:flex;gap:12px;align-items:flex-start;font-size:15.5px}
+.panel li::before{content:"";flex:none;width:8px;height:8px;margin-top:9px;background:var(--volt);outline:1.5px solid var(--ink)}
+.panel .btn{align-self:flex-start;margin-top:auto}
+
+/* facilities bento */
+.facilities{padding:120px 0}
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:300px 300px;gap:14px}
+.tile{position:relative;overflow:hidden}
+.tile .ph{position:absolute;inset:0}
+.tile .cap{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:22px 24px;background:linear-gradient(0deg,rgba(0,0,0,.85),rgba(0,0,0,0));display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
+.tile h3{font-family:var(--display);font-weight:800;font-size:30px;text-transform:uppercase;line-height:1}
+.tile small{font-size:14px;color:rgba(255,255,255,.75);display:block;margin-top:6px}
+.tile .num{font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:.14em;color:var(--volt)}
+.t1{grid-column:span 2;grid-row:span 2}
+.t2{grid-column:span 2}
+.t3,.t4{grid-column:span 1}
+.facil-note{display:flex;gap:40px;flex-wrap:wrap;margin-top:40px;padding-top:30px;border-top:1px solid var(--line-d);font-size:15px;color:rgba(255,255,255,.75)}
+.facil-note b{color:#fff;font-weight:600}
+
+/* schedule */
+.schedule{padding:120px 0}
+.sched-bar{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:26px}
+.days{display:flex;gap:6px;flex-wrap:wrap}
+.day{min-width:64px;min-height:56px;border:1.5px solid var(--ink);background:transparent;font-family:var(--display);font-weight:700;text-transform:uppercase;line-height:1.05;padding:8px 12px}
+.day small{display:block;font-size:12px;letter-spacing:.14em;font-weight:600;color:var(--muted)}
+.day span{font-size:22px}
+.day[aria-pressed="true"]{background:var(--ink);color:#fff}
+.day[aria-pressed="true"] small{color:var(--volt)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{min-height:44px;padding:0 18px;border:1px solid var(--line);background:var(--card);font-family:var(--display);font-weight:600;font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+.chip[aria-pressed="true"]{background:var(--volt);border-color:var(--ink);color:var(--ink)}
+.sched{background:var(--card);border:1.5px solid var(--ink)}
+.row{display:grid;grid-template-columns:130px 1.4fr 1fr 110px 150px;align-items:center;gap:20px;padding:20px 26px;border-top:1px solid var(--line)}
+.row:first-child{border-top:0}
+.row.head{background:var(--ink);color:#fff;font-family:var(--display);font-weight:600;font-size:13px;letter-spacing:.18em;text-transform:uppercase;padding:14px 26px}
+.row .time{font-family:var(--display);font-weight:800;font-size:28px;line-height:1}
+.row .time small{display:block;font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--muted)}
+.row .cls b{display:block;font-family:var(--display);font-weight:800;font-size:24px;text-transform:uppercase;line-height:1.05}
+.row .cls small{font-size:13px;color:var(--muted)}
+.tag{display:inline-block;padding:3px 9px;font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--ink);margin-top:6px}
+.row .coach{display:flex;align-items:center;gap:10px;font-size:15px}
+.row .coach span{width:34px;height:34px;border-radius:50%;background:#CFCDC6;flex:none}
+.spots{font-size:14px;color:var(--ink-2)}
+.spots b{font-family:var(--display);font-weight:800;font-size:20px;color:var(--ink)}
+.spots.low b{color:#B3261E}
+.row .btn{min-height:44px;padding:0 18px;font-size:14px}
+.row .btn.full{background:transparent;border-color:var(--line);color:var(--muted);pointer-events:none}
+.sched-foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:20px;font-size:14px;color:var(--muted)}
+.empty{padding:40px 26px;text-align:center;color:var(--muted)}
+
+/* coaches */
+.coach-hero{position:relative;min-height:620px;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.coach-hero .bg{position:absolute;inset:0}
+.coach-hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.85) 0%,rgba(0,0,0,.35) 60%,rgba(0,0,0,.1) 100%)}
+.coach-hero .inner{position:relative;z-index:2;padding:0 0 80px}
+.coach-hero h2{font-size:clamp(60px,8vw,128px);max-width:820px}
+.coach-hero p{max-width:480px;margin-top:22px;font-size:18px;color:rgba(255,255,255,.85)}
+.coaches{padding:0 0 120px;position:relative;z-index:2}
+.cgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:14px}
+.ccard .img{aspect-ratio:3/4}
+.ccard .info{padding:20px 4px 0}
+.ccard h3{font-family:var(--display);font-weight:800;font-size:30px;text-transform:uppercase;line-height:1}
+.ccard .role{font-size:14px;color:rgba(255,255,255,.7);margin-top:6px}
+.ccard .creds{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.ccard .creds span{font-family:var(--display);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line-d);padding:4px 9px;color:rgba(255,255,255,.85)}
+
+/* pricing */
+.pricing{padding:120px 0}
+.offer{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;background:var(--ink);color:#fff;padding:30px 36px;margin-bottom:22px}
+.offer h3{font-family:var(--display);font-weight:800;font-size:40px;text-transform:uppercase;line-height:1}
+.offer h3 span{color:var(--volt)}
+.offer p{color:rgba(255,255,255,.75);margin-top:6px;font-size:15px}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.plan{background:var(--card);border:1.5px solid var(--ink);padding:36px 32px;display:flex;flex-direction:column;position:relative}
+.plan.feat{background:var(--volt)}
+.plan .badge{position:absolute;top:-1.5px;right:-1.5px;background:var(--ink);color:var(--volt);font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:7px 12px}
+.plan h3{font-family:var(--display);font-weight:800;font-size:30px;text-transform:uppercase;line-height:1}
+.plan .desc{color:var(--ink-2);font-size:15px;margin-top:8px;min-height:48px}
+.plan.feat .desc{color:#2D3311}
+.plan .price{display:flex;align-items:flex-end;gap:8px;margin:26px 0 24px;padding-bottom:24px;border-bottom:1px solid var(--line)}
+.plan.feat .price{border-color:rgba(0,0,0,.2)}
+.plan .price b{font-family:var(--display);font-weight:800;font-size:76px;line-height:.85}
+.plan .price small{font-size:15px;color:var(--ink-2);padding-bottom:6px}
+.plan.feat .price small{color:#2D3311}
+.plan ul{list-style:none;display:grid;gap:12px;margin-bottom:34px}
+.plan li{display:flex;gap:12px;font-size:15.5px}
+.plan li svg{flex:none;width:18px;height:18px;margin-top:4px}
+.plan .btn{margin-top:auto;width:100%}
+.price-note{margin-top:22px;font-size:14px;color:var(--muted);text-align:center}
+
+/* testimonials */
+.testi{padding:130px 0}
+.big-quote{text-align:center;max-width:1000px;margin:0 auto 80px}
+.big-quote .stars{color:var(--volt);letter-spacing:4px;font-size:18px}
+.big-quote blockquote{font-family:var(--display);font-weight:800;font-size:clamp(40px,4.8vw,68px);text-transform:uppercase;line-height:.98;margin:22px 0 22px}
+.big-quote cite{font-style:normal;color:rgba(255,255,255,.7);font-size:15px}
+.results{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.res{background:var(--dark-2);border:1px solid var(--line-d);padding:30px}
+.res .stat{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding-bottom:22px;margin-bottom:22px;border-bottom:1px solid var(--line-d)}
+.res .stat b{font-family:var(--display);font-weight:800;font-size:54px;line-height:.9;color:var(--volt)}
+.res .stat span{font-family:var(--display);font-weight:600;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+.res p{color:rgba(255,255,255,.85);font-size:16px}
+.res .who{display:flex;align-items:center;gap:12px;margin-top:24px}
+.res .who span{width:42px;height:42px;border-radius:50%;background:#3A3A3A;flex:none}
+.res .who b{display:block;font-weight:600;font-size:15px}
+.res .who small{color:rgba(255,255,255,.6);font-size:13px}
+.rating-row{display:flex;justify-content:center;gap:50px;flex-wrap:wrap;margin-top:60px;padding-top:40px;border-top:1px solid var(--line-d)}
+.rating-row div{text-align:center}
+.rating-row b{display:block;font-family:var(--display);font-weight:800;font-size:40px;line-height:1}
+.rating-row small{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6);font-family:var(--display);font-weight:600}
+
+/* faq */
+.faq{padding:120px 0}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}
+.faq h2{font-size:clamp(56px,6.4vw,100px)}
+.faq .side p{color:var(--ink-2);margin:24px 0 28px;max-width:360px}
+.faq details{border-top:1.5px solid var(--ink)}
+.faq details:last-child{border-bottom:1.5px solid var(--ink)}
+.faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;cursor:pointer;font-family:var(--display);font-weight:700;font-size:24px;text-transform:uppercase;line-height:1.1;min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{flex:none;width:36px;height:36px;border:1.5px solid var(--ink);display:grid;place-items:center;transition:.2s}
+.faq summary i::before{content:"+";font-style:normal;font-size:22px;line-height:1;font-family:var(--sans)}
+.faq details[open] summary i{background:var(--volt)}
+.faq details[open] summary i::before{content:"\2212"}
+.faq details p{padding:0 60px 26px 0;color:var(--ink-2)}
+
+/* trial cta */
+.trial{display:grid;grid-template-columns:1fr 1fr}
+.trial .left{position:relative;min-height:720px;color:#fff;display:flex;align-items:flex-end}
+.trial .left .ph{position:absolute;inset:0}
+.trial .left .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.85),rgba(0,0,0,.1) 70%)}
+.trial .left .inner{position:relative;z-index:2;padding:60px}
+.trial h2{font-size:clamp(60px,6.8vw,112px)}
+.trial .left p{max-width:440px;margin-top:22px;font-size:18px;color:rgba(255,255,255,.85)}
+.trial .right{background:var(--volt);padding:70px 64px;display:flex;flex-direction:column;justify-content:center}
+.trial form{max-width:520px;width:100%}
+.trial form h3{font-family:var(--display);font-weight:800;font-size:40px;text-transform:uppercase;line-height:1}
+.trial form>p{font-size:15px;color:#2D3311;margin:10px 0 30px}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:grid;gap:7px;margin-bottom:14px}
+.field label,.field legend{font-family:var(--display);font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.field input,.field select{font:inherit;font-size:16px;min-height:52px;padding:0 16px;border:1.5px solid var(--ink);background:#fff;color:var(--ink);border-radius:0;width:100%;appearance:none}
+.field input:focus,.field select:focus{outline:3px solid var(--ink);outline-offset:2px}
+.field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23111' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}
+fieldset.field{border:0}
+.times{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.times label{display:block;cursor:pointer;position:relative}
+.times input{position:absolute;opacity:0;pointer-events:none}
+.times span{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:56px;border:1.5px solid var(--ink);background:#fff;font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:.06em;text-transform:uppercase;line-height:1.05}
+.times span small{font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.1em}
+.times input:checked+span{background:var(--ink);color:#fff}
+.times input:checked+span small{color:var(--volt)}
+.times input:focus-visible+span{outline:3px solid var(--ink);outline-offset:2px}
+.trial .btn{width:100%;margin-top:10px;min-height:58px;font-size:18px}
+.trial .note{display:flex;gap:18px;flex-wrap:wrap;margin-top:18px;font-size:14px;color:#2D3311}
+.trial .note span{display:flex;align-items:center;gap:6px}
+.form-ok{display:none;margin-top:16px;padding:16px;border:1.5px solid var(--ink);background:#fff;font-weight:500}
+.form-ok.show{display:block}
+
+/* footer */
+footer{background:var(--dark);color:#fff;padding:90px 0 0;overflow:hidden}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:50px;padding-bottom:60px;border-bottom:1px solid var(--line-d)}
+.news h4{font-family:var(--display);font-weight:800;font-size:32px;text-transform:uppercase;line-height:1}
+.news p{color:rgba(255,255,255,.7);font-size:15px;margin:10px 0 20px;max-width:380px}
+.news form{display:flex;max-width:440px}
+.news input{flex:1;min-width:0;min-height:52px;padding:0 16px;font:inherit;background:transparent;border:1.5px solid rgba(255,255,255,.4);border-right:0;color:#fff}
+.news input::placeholder{color:rgba(255,255,255,.55)}
+.news .btn{min-height:52px}
+footer h5{font-family:var(--display);font-weight:700;font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--volt);margin-bottom:18px}
+footer ul{list-style:none;display:grid;gap:10px;font-size:15px;color:rgba(255,255,255,.75)}
+footer ul a:hover{color:#fff}
+.fbot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding:26px 0;font-size:13px;color:rgba(255,255,255,.55)}
+.soc{display:flex;gap:8px}
+.soc a{width:44px;height:44px;border:1px solid var(--line-d);display:grid;place-items:center}
+.soc a:hover{border-color:var(--volt);color:var(--volt)}
+.soc svg{width:18px;height:18px}
+.wordmark{font-family:var(--display);font-weight:800;font-size:clamp(120px,27vw,420px);line-height:.72;text-transform:uppercase;letter-spacing:-.02em;color:var(--dark-3);text-align:center;margin-top:20px;user-select:none;padding-bottom:0;transform:translateY(8%)}
+
+@media (prefers-reduced-motion:reduce){.band .track{animation:none}}
+
+/* responsive */
+@media (max-width:1080px){
+  .links,.nav-r .login{display:none}
+  .intro-grid,.panel,.faq-grid,.trial{grid-template-columns:1fr}
+  .panel .img{min-height:420px}
+  .bento{grid-template-columns:repeat(2,1fr);grid-template-rows:auto}
+  .t1{grid-column:span 2;grid-row:auto;height:420px}
+  .t2{grid-column:span 2;height:300px}
+  .t3,.t4,.t5{height:280px}
+  .cgrid{grid-template-columns:repeat(2,1fr)}
+  .plans,.results{grid-template-columns:1fr}
+  .plans{max-width:520px;margin:0 auto}
+  .row{grid-template-columns:100px 1.4fr 1fr 130px}
+  .row .spots{display:none}
+  .row .coach,.row.head .h-coach,.row.head .h-spots{display:none}
+  .fgrid{grid-template-columns:1fr 1fr}
+  .faq-grid{gap:40px}
+}
+@media (max-width:720px){
+  .wrap{width:calc(100% - 40px)}
+  .announce{font-size:12px;letter-spacing:.1em}
+  header{top:34px}
+  .nav-r .btn{display:none}
+  .burger{display:grid}
+  .hero{min-height:auto}
+  .hero-inner{padding-top:170px}
+  .hero h1{font-size:76px}
+  .hero-row{flex-direction:column;align-items:flex-start;gap:24px;margin-top:24px}
+  .hero-row p{font-size:16px}
+  .hero .ctas{width:100%}
+  .hero .ctas .btn{flex:1 1 100%}
+  .hero-stats{grid-template-columns:repeat(2,1fr);margin-top:44px}
+  .hero-stats div,.hero-stats div+div{padding:20px 0;border-left:0}
+  .hero-stats div:nth-child(even){padding-left:18px;border-left:1px solid var(--line-d)}
+  .hero-stats div:nth-child(n+3){border-top:1px solid var(--line-d)}
+  .hero-stats b{font-size:36px}
+  .band span{font-size:30px;padding:14px 0}
+  .band span::after{margin:0 22px;width:10px;height:10px}
+  .intro,.programs,.facilities,.schedule,.pricing,.testi,.faq{padding:80px 0}
+  .intro h2{font-size:56px}
+  .intro .lead{font-size:17px}
+  .principles{grid-template-columns:1fr;margin-top:56px}
+  .principles div,.principles div+div{padding:24px 0;border-left:0;border-top:1px solid var(--line)}
+  .principles div:first-child{border-top:0}
+  .sec-head{flex-direction:column;align-items:flex-start;gap:16px;margin-bottom:36px}
+  .sec-head h2{font-size:56px}
+  .tab{padding:14px 18px;font-size:17px}
+  .panel .img{min-height:300px}
+  .panel .body{padding:30px 22px}
+  .panel h3{font-size:48px}
+  .panel .meta b{font-size:20px}
+  .bento{grid-template-columns:1fr}
+  .t1,.t2,.t3,.t4,.t5{grid-column:auto;height:260px}
+  .t1{height:340px}
+  .sched-bar{flex-direction:column;align-items:stretch}
+  .sched-bar>*{min-width:0;max-width:100%}
+  .news h4{font-size:28px}
+  .days{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px}
+  .day{min-width:58px}
+  .row{grid-template-columns:70px minmax(0,1fr) auto;gap:12px;padding:18px 14px}
+  .row .cls{min-width:0}
+  .row .cls b{font-size:18px}
+  .row.head{display:none}
+  .row .spots{display:none}
+  .row .time{font-size:22px}
+  .row .cls b{font-size:20px}
+  .row .btn{padding:0 14px}
+  .coach-hero{min-height:520px}
+  .coach-hero .inner{padding-bottom:50px}
+  .coach-hero h2{font-size:60px}
+  .coach-hero p{font-size:16px}
+  .coaches{padding-bottom:80px}
+  .cgrid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .ccard h3{font-size:22px}
+  .ccard .creds{display:none}
+  .offer{padding:24px}
+  .offer h3{font-size:30px}
+  .offer .btn{width:100%}
+  .plan{padding:30px 24px}
+  .plan .price b{font-size:64px}
+  .big-quote{margin-bottom:50px}
+  .big-quote blockquote{font-size:38px}
+  .rating-row{gap:30px}
+  .faq h2{font-size:56px}
+  .faq summary{font-size:20px}
+  .faq details p{padding-right:0}
+  .trial .left{min-height:480px}
+  .trial .left .inner{padding:40px 20px}
+  .trial h2{font-size:60px}
+  .trial .left p{font-size:16px}
+  .trial .right{padding:50px 20px}
+  .f2{grid-template-columns:1fr;gap:0}
+  .fgrid{grid-template-columns:1fr;gap:36px}
+  .wordmark{font-size:31vw}
+}
+</style>
+</head>
+<body>
+
+<div class="announce">Your first week is free &middot; New members only</div>
+
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a href="#top" class="logo" aria-label="FORMA Athletic Club home"><i aria-hidden="true"></i>FORMA</a>
+      <div class="links">
+        <a href="#programs">Programs</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#coaches">Coaches</a>
+        <a href="#membership">Membership</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-r">
+        <a href="#" class="login">Member Login</a>
+        <a href="#trial" class="btn btn-volt">Book Free Trial</a>
+        <button class="burger" type="button" aria-label="Open menu"><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="bg ph" data-label="Hero photo / video: athlete mid-lift, dark moody gym">
+    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=2000&q=80" alt="Athlete performing a heavy barbell lift in a dark training gym" onerror="this.remove()">
+  </div>
+  <div class="wrap hero-inner">
+    <div class="label" style="color:var(--volt)">Boutique training club &middot; East Austin</div>
+    <h1 class="disp" style="margin-top:18px">Train with <em>intent.</em></h1>
+    <div class="hero-row">
+      <p>Coached strength, conditioning and boxing classes capped at 14 people. Real programming, real coaching, no crowded floor.</p>
+      <div class="ctas">
+        <a href="#trial" class="btn btn-volt">Book Free Trial <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#schedule" class="btn btn-line-l">View Schedule</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div><b>4.9</b><small><span class="stars" aria-hidden="true">★★★★★</span> 380 Google reviews</small></div>
+      <div><b>1,200+</b><small>Active members</small></div>
+      <div><b>60+</b><small>Coached classes per week</small></div>
+      <div><b>14</b><small>Max people per class</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- BAND -->
+<div class="band" aria-hidden="true">
+  <div class="track">
+    <span>Strength</span><span>Conditioning</span><span>Boxing</span><span>Mobility</span><span>Recovery</span><span>Open Gym</span>
+    <span>Strength</span><span>Conditioning</span><span>Boxing</span><span>Mobility</span><span>Recovery</span><span>Open Gym</span>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="intro">
+  <div class="wrap">
+    <div class="intro-grid">
+      <div>
+        <div class="eyebrow label">The FORMA method</div>
+        <h2 class="disp">Not a gym.<br>A <span class="mark">training club.</span></h2>
+        <p class="lead">Big-box gyms give you equipment and leave you alone. We give you a coach, a plan and a room full of people who show up. Every session is programmed in 6-week blocks so you always know what you are building toward.</p>
+      </div>
+      <div class="img ph lt" data-label="Photo: coach cueing a member on squat form, 4:5">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1000&q=80" alt="Coach guiding a member through a squat" onerror="this.remove()">
+      </div>
+    </div>
+    <div class="principles">
+      <div><i>01</i><h3>Capped at 14</h3><p>Small enough that your coach sees every rep and knows your name by week two.</p></div>
+      <div><i>02</i><h3>Coached, always</h3><p>No class runs without a certified coach on the floor. Scaling options for every movement.</p></div>
+      <div><i>03</i><h3>Measured progress</h3><p>Benchmark tests every 6 weeks, logged in the app, so progress is something you can see.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section class="programs" id="programs">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow label">Programs</div>
+        <h2 class="disp">Four ways<br>to train.</h2>
+      </div>
+      <p>Mix any class on an unlimited membership. Most members combine two strength sessions with one conditioning and one recovery each week.</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Programs">
+      <button class="tab" role="tab" id="tab-strength" aria-controls="p-strength" aria-selected="true">Strength</button>
+      <button class="tab" role="tab" id="tab-cond" aria-controls="p-cond" aria-selected="false" tabindex="-1">Conditioning</button>
+      <button class="tab" role="tab" id="tab-box" aria-controls="p-box" aria-selected="false" tabindex="-1">Boxing</button>
+      <button class="tab" role="tab" id="tab-rec" aria-controls="p-rec" aria-selected="false" tabindex="-1">Recovery</button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-strength" aria-labelledby="tab-strength">
+      <div class="img ph" data-label="Photo: barbell strength class">
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80" alt="Members training with barbells and dumbbells" onerror="this.remove()">
+      </div>
+      <div class="body">
+        <h3 class="disp">Strength</h3>
+        <div class="meta">
+          <div><small>Duration</small><b>60 min</b></div>
+          <div><small>Level</small><b>All</b></div>
+          <div><small>Intensity</small><div class="intensity" aria-label="Intensity 4 of 5"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span></div></div>
+        </div>
+        <p>Barbell-based progressive overload. Squat, hinge, press and pull, programmed in 6-week blocks with a test week at the end.</p>
+        <ul>
+          <li>Coached warm-up and movement prep</li>
+          <li>Main lift with individual load targets</li>
+          <li>Accessory superset and core finisher</li>
+        </ul>
+        <a href="#trial" class="btn btn-dark">Try a Strength class</a>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-cond" aria-labelledby="tab-cond" hidden>
+      <div class="img ph" data-label="Photo: sled push / rower conditioning">
+        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=1200&q=80" alt="High intensity conditioning workout" onerror="this.remove()">
+      </div>
+      <div class="body">
+        <h3 class="disp">Conditioning</h3>
+        <div class="meta">
+          <div><small>Duration</small><b>45 min</b></div>
+          <div><small>Level</small><b>All</b></div>
+          <div><small>Intensity</small><div class="intensity" aria-label="Intensity 5 of 5"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span></div></div>
+        </div>
+        <p>Intervals on rowers, bikes, sleds and kettlebells. Heart-rate zones on screen so you push hard on the right days.</p>
+        <ul>
+          <li>Team and partner formats</li>
+          <li>Live heart-rate display</li>
+          <li>Scalable for every fitness level</li>
+        </ul>
+        <a href="#trial" class="btn btn-dark">Try a Conditioning class</a>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-box" aria-labelledby="tab-box" hidden>
+      <div class="img ph" data-label="Photo: boxing pad work">
+        <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=1200&q=80" alt="Boxing pad work session" onerror="this.remove()">
+      </div>
+      <div class="body">
+        <h3 class="disp">Boxing</h3>
+        <div class="meta">
+          <div><small>Duration</small><b>50 min</b></div>
+          <div><small>Level</small><b>All</b></div>
+          <div><small>Intensity</small><div class="intensity" aria-label="Intensity 4 of 5"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span></div></div>
+        </div>
+        <p>Technique-first boxing. Footwork, combinations and partner pad work, finished with a bag round that empties the tank.</p>
+        <ul>
+          <li>Gloves and wraps provided</li>
+          <li>No sparring, no contact</li>
+          <li>Technique ladder from beginner to advanced</li>
+        </ul>
+        <a href="#trial" class="btn btn-dark">Try a Boxing class</a>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-rec" aria-labelledby="tab-rec" hidden>
+      <div class="img ph" data-label="Photo: mobility / sauna recovery">
+        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=80" alt="Mobility and stretching class" onerror="this.remove()">
+      </div>
+      <div class="body">
+        <h3 class="disp">Recovery</h3>
+        <div class="meta">
+          <div><small>Duration</small><b>40 min</b></div>
+          <div><small>Level</small><b>All</b></div>
+          <div><small>Intensity</small><div class="intensity" aria-label="Intensity 1 of 5"><span class="on"></span><span></span><span></span><span></span><span></span></div></div>
+        </div>
+        <p>Guided mobility followed by contrast therapy in our sauna and cold plunge suite. The session that keeps you training.</p>
+        <ul>
+          <li>Mobility flow led by a coach</li>
+          <li>Infrared sauna and cold plunge</li>
+          <li>Included on Unlimited membership</li>
+        </ul>
+        <a href="#trial" class="btn btn-dark">Try a Recovery session</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section class="facilities dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow label">The space</div>
+        <h2 class="disp">10,000 sq ft<br>built to train.</h2>
+      </div>
+      <p>Competition-grade equipment, a dedicated boxing room and a recovery suite. Everything you need, nothing you will never use.</p>
+    </div>
+    <div class="bento">
+      <div class="tile t1"><div class="ph" data-label="Photo: main strength floor, racks and platforms"><img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1400&q=80" alt="Main strength floor with racks and lifting platforms" onerror="this.remove()"></div><div class="cap"><div><h3>Strength floor</h3><small>12 racks, calibrated plates, platforms</small></div><span class="num">01</span></div></div>
+      <div class="tile t2"><div class="ph" data-label="Photo: turf lane with sleds"><img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=1200&q=80" alt="Indoor turf lane for sled training" onerror="this.remove()"></div><div class="cap"><div><h3>Turf lane</h3><small>25 m turf, sleds, prowlers</small></div><span class="num">02</span></div></div>
+      <div class="tile t3"><div class="ph" data-label="Photo: boxing room with bags"><img src="https://images.unsplash.com/photo-1583473848882-f9a5bc7fd2ee?auto=format&fit=crop&w=800&q=80" alt="Boxing room with heavy bags" onerror="this.remove()"></div><div class="cap"><div><h3>Boxing room</h3><small>16 heavy bags</small></div><span class="num">03</span></div></div>
+      <div class="tile t4"><div class="ph" data-label="Photo: sauna and cold plunge"><img src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?auto=format&fit=crop&w=800&q=80" alt="Infrared sauna in the recovery suite" onerror="this.remove()"></div><div class="cap"><div><h3>Recovery</h3><small>Sauna &amp; cold plunge</small></div><span class="num">04</span></div></div>
+    </div>
+    <div class="facil-note">
+      <span><b>Open</b> Mon to Fri 5:30 AM to 10 PM, Sat to Sun 7 AM to 6 PM</span>
+      <span><b>Included</b> Towels, lockers, showers, filtered water</span>
+      <span><b>Parking</b> Free member lot and bike racks</span>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="schedule" id="schedule">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow label">Weekly schedule</div>
+        <h2 class="disp">Find your<br>class.</h2>
+      </div>
+      <p>Classes run from 5:30 AM. Book up to 7 days ahead in the FORMA app. Spots update in real time.</p>
+    </div>
+
+    <div class="sched-bar">
+      <div class="days" role="group" aria-label="Select day" id="days"></div>
+      <div class="chips" role="group" aria-label="Filter by program" id="chips">
+        <button class="chip" type="button" data-f="all" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-f="Strength" aria-pressed="false">Strength</button>
+        <button class="chip" type="button" data-f="Conditioning" aria-pressed="false">Conditioning</button>
+        <button class="chip" type="button" data-f="Boxing" aria-pressed="false">Boxing</button>
+        <button class="chip" type="button" data-f="Recovery" aria-pressed="false">Recovery</button>
+      </div>
+    </div>
+
+    <div class="sched" id="sched" aria-live="polite"></div>
+    <div class="sched-foot">
+      <span>All classes are coached. Arrive 10 minutes early for your first visit.</span>
+      <a href="#trial" style="text-decoration:underline;color:var(--ink)">Download the full monthly timetable</a>
+    </div>
+  </div>
+</section>
+
+<!-- COACHES -->
+<section class="dark" id="coaches">
+  <div class="coach-hero">
+    <div class="bg ph" data-label="Photo: head coach, wide dramatic shot">
+      <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=2000&q=80" alt="Head coach standing on the training floor" onerror="this.remove()">
+    </div>
+    <div class="wrap inner">
+      <div class="eyebrow label">Coaching team</div>
+      <h2 class="disp">Coaches who<br>actually <span class="mark">coach.</span></h2>
+      <p>Every FORMA coach holds a national certification, completes our in-house coaching program and keeps learning every quarter.</p>
+    </div>
+  </div>
+  <div class="coaches">
+    <div class="wrap">
+      <div class="cgrid">
+        <article class="ccard"><div class="img ph" data-label="Coach portrait 3:4"><img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=700&q=80" alt="Portrait of coach Marcus Hale" onerror="this.remove()"></div><div class="info"><h3>Marcus Hale</h3><p class="role">Head Coach, Strength</p><div class="creds"><span>NSCA-CSCS</span><span>12 yrs</span></div></div></article>
+        <article class="ccard"><div class="img ph" data-label="Coach portrait 3:4"><img src="https://images.unsplash.com/photo-1609899537878-88d5ba429bdb?auto=format&fit=crop&w=700&q=80" alt="Portrait of coach Dani Reyes" onerror="this.remove()"></div><div class="info"><h3>Dani Reyes</h3><p class="role">Conditioning Lead</p><div class="creds"><span>NASM-CPT</span><span>8 yrs</span></div></div></article>
+        <article class="ccard"><div class="img ph" data-label="Coach portrait 3:4"><img src="https://images.unsplash.com/photo-1597452485669-2c7bb5fef90d?auto=format&fit=crop&w=700&q=80" alt="Portrait of coach Theo Grant" onerror="this.remove()"></div><div class="info"><h3>Theo Grant</h3><p class="role">Boxing Coach</p><div class="creds"><span>USA Boxing L2</span><span>10 yrs</span></div></div></article>
+        <article class="ccard"><div class="img ph" data-label="Coach portrait 3:4"><img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=700&q=80" alt="Portrait of coach Priya Nair" onerror="this.remove()"></div><div class="info"><h3>Priya Nair</h3><p class="role">Mobility &amp; Recovery</p><div class="creds"><span>DPT</span><span>FRC</span></div></div></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="membership">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow label">Membership</div>
+        <h2 class="disp">Simple<br>pricing.</h2>
+      </div>
+      <p>No joining fee. No long contract. Freeze up to 2 months a year, cancel with 30 days notice.</p>
+    </div>
+
+    <div class="offer">
+      <div>
+        <h3>New here? First week <span>free.</span></h3>
+        <p>7 days of unlimited classes, onboarding with a coach, no card required.</p>
+      </div>
+      <a href="#trial" class="btn btn-volt">Claim free week</a>
+    </div>
+
+    <div class="plans">
+      <div class="plan">
+        <h3>Drop-in</h3>
+        <p class="desc">For travelers and occasional training.</p>
+        <div class="price"><b>$32</b><small>/ class</small></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Any single class</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Towel and locker</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Valid for 30 days</li>
+        </ul>
+        <a href="#trial" class="btn btn-line">Buy drop-in</a>
+      </div>
+      <div class="plan feat">
+        <span class="badge">Most popular</span>
+        <h3>Unlimited</h3>
+        <p class="desc">For members training 3 or more times a week.</p>
+        <div class="price"><b>$219</b><small>/ month</small></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Unlimited classes</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Recovery suite access</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Benchmark testing every 6 weeks</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>2 guest passes per month</li>
+        </ul>
+        <a href="#trial" class="btn btn-dark">Start free week</a>
+      </div>
+      <div class="plan">
+        <h3>8 Classes</h3>
+        <p class="desc">For a steady twice-a-week routine.</p>
+        <div class="price"><b>$169</b><small>/ month</small></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>8 classes per month</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Unused classes roll over once</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Benchmark testing every 6 weeks</li>
+        </ul>
+        <a href="#trial" class="btn btn-line">Choose 8 classes</a>
+      </div>
+    </div>
+    <p class="price-note">Student, first responder and corporate rates available. Ask at the front desk.</p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi dark">
+  <div class="wrap">
+    <div class="big-quote">
+      <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+      <blockquote>“I tried four gyms in two years. FORMA is the first one where I never skip.”</blockquote>
+      <cite>Jordan M., member since 2023</cite>
+    </div>
+    <div class="results">
+      <div class="res">
+        <div class="stat"><b>+45 KG</b><span>Deadlift in 6 months</span></div>
+        <p>The 6-week blocks changed everything. I finally stopped guessing what to do and started seeing numbers move.</p>
+        <div class="who"><span></span><div><b>Alyssa T.</b><small>Strength, 4x a week</small></div></div>
+      </div>
+      <div class="res">
+        <div class="stat"><b>-12 KG</b><span>In 5 months</span></div>
+        <p>Small classes meant the coaches noticed when I was missing. That accountability is worth the membership alone.</p>
+        <div class="who"><span></span><div><b>Ryan C.</b><small>Conditioning &amp; Boxing</small></div></div>
+      </div>
+      <div class="res">
+        <div class="stat"><b>0</b><span>Back pain flare-ups this year</span></div>
+        <p>Recovery sessions with Priya fixed what physical therapy alone could not. I train harder now and feel better.</p>
+        <div class="who"><span></span><div><b>Monica L.</b><small>Strength &amp; Recovery</small></div></div>
+      </div>
+    </div>
+    <div class="rating-row">
+      <div><b>4.9</b><small>Google</small></div>
+      <div><b>5.0</b><small>ClassPass</small></div>
+      <div><b>96%</b><small>Member retention</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap faq-grid">
+    <div class="side">
+      <div class="eyebrow label">FAQ</div>
+      <h2 class="disp">Before<br>you come in.</h2>
+      <p>Still unsure? Message us and a coach will reply within the hour during opening times.</p>
+      <a href="#trial" class="btn btn-line">Contact a coach</a>
+    </div>
+    <div>
+      <details open>
+        <summary>I have never trained before. Is FORMA right for me?<i aria-hidden="true"></i></summary>
+        <p>Yes. Every class is coached and every movement has a scaled version. Your first visit includes a 20-minute onboarding with a coach, so you walk into class knowing the basics.</p>
+      </details>
+      <details>
+        <summary>How does the free trial week work?<i aria-hidden="true"></i></summary>
+        <p>New members get 7 days of unlimited classes. No card is required to book, and there is no automatic renewal.</p>
+      </details>
+      <details>
+        <summary>How big are the classes?<i aria-hidden="true"></i></summary>
+        <p>Classes are capped at 14 people so a coach can see and correct every rep.</p>
+      </details>
+      <details>
+        <summary>Can I freeze or cancel my membership?<i aria-hidden="true"></i></summary>
+        <p>Yes. Freeze up to 2 months per year, or cancel anytime with 30 days notice. No cancellation fees.</p>
+      </details>
+      <details>
+        <summary>Is there parking?<i aria-hidden="true"></i></summary>
+        <p>Free member parking is available behind the building, plus secure bike racks at the entrance.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- TRIAL CTA -->
+<section class="trial" id="trial">
+  <div class="left">
+    <div class="ph" data-label="Photo: group class high-five / community moment">
+      <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=1400&q=80" alt="Member training with kettlebells in a group class" onerror="this.remove()">
+    </div>
+    <div class="inner">
+      <div class="label" style="color:var(--volt)">Free trial week</div>
+      <h2 class="disp" style="margin-top:14px">Your first<br>week is<br>on us.</h2>
+      <p>Seven days, unlimited classes, a coach-led onboarding. If it is not for you, you walk away. No card, no catch.</p>
+    </div>
+  </div>
+  <div class="right">
+    <form id="trialForm" novalidate>
+      <h3>Book your free week</h3>
+      <p>A coach will text you within 2 hours to confirm your first class.</p>
+      <div class="f2">
+        <div class="field"><label for="fn">First name</label><input id="fn" name="fn" autocomplete="given-name" required></div>
+        <div class="field"><label for="ln">Last name</label><input id="ln" name="ln" autocomplete="family-name" required></div>
+      </div>
+      <div class="f2">
+        <div class="field"><label for="em">Email</label><input id="em" name="em" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="ph">Phone</label><input id="ph" name="ph" type="tel" autocomplete="tel" required></div>
+      </div>
+      <div class="field">
+        <label for="goal">Main goal</label>
+        <select id="goal" name="goal">
+          <option>Get stronger</option>
+          <option>Lose fat</option>
+          <option>Improve fitness and endurance</option>
+          <option>Learn boxing</option>
+          <option>Move better, less pain</option>
+        </select>
+      </div>
+      <fieldset class="field">
+        <legend>Preferred time</legend>
+        <div class="times">
+          <label><input type="radio" name="time" value="morning" checked><span>Morning<small>5:30 to 9 AM</small></span></label>
+          <label><input type="radio" name="time" value="midday"><span>Midday<small>11 AM to 2 PM</small></span></label>
+          <label><input type="radio" name="time" value="evening"><span>Evening<small>5 to 8 PM</small></span></label>
+        </div>
+      </fieldset>
+      <button type="submit" class="btn btn-dark">Claim my free week <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <div class="note"><span>✓ No card required</span><span>✓ No auto-renewal</span><span>✓ Cancel anytime</span></div>
+      <div class="form-ok" id="formOk" role="status">You are in. A coach will text you shortly to book your first class.</div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="news">
+        <h4>Train smarter, weekly.</h4>
+        <p>One email a week: programming notes, recovery tips and class updates. No spam.</p>
+        <form onsubmit="return false" aria-label="Newsletter">
+          <label for="nl" class="sr" style="position:absolute;left:-9999px">Email</label>
+          <input id="nl" type="email" placeholder="Your email">
+          <button class="btn btn-volt" type="submit">Join</button>
+        </form>
+      </div>
+      <div><h5>Club</h5><ul><li><a href="#programs">Programs</a></li><li><a href="#schedule">Schedule</a></li><li><a href="#coaches">Coaches</a></li><li><a href="#membership">Membership</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h5>Members</h5><ul><li><a href="#">Member login</a></li><li><a href="#">Download app</a></li><li><a href="#">Gift cards</a></li><li><a href="#">Careers</a></li></ul></div>
+      <div><h5>Visit</h5><ul><li>1180 E 6th St, Austin, TX 78702</li><li><a href="tel:+15125550147">(512) 555 0147</a></li><li><a href="mailto:hello@formaclub.co">hello@formaclub.co</a></li><li>Mon to Fri 5:30 AM to 10 PM</li><li>Sat to Sun 7 AM to 6 PM</li></ul></div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 FORMA Athletic Club. All rights reserved.</span>
+      <div class="soc">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.5 2.5 2.5 4.5 5 5"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="5.5" width="19" height="13" rx="3"/><path d="M10 9.5l5 2.5-5 2.5z" fill="currentColor"/></svg></a>
+      </div>
+      <span><a href="#">Privacy</a> &middot; <a href="#">Terms</a></span>
+    </div>
+  </div>
+  <div class="wordmark" aria-hidden="true">FORMA</div>
+</footer>
+
+<script>
+// Program tabs
+(function(){
+  const tabs=[...document.querySelectorAll('.tab')];
+  function select(t){
+    tabs.forEach(x=>{const on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});
+  }
+  tabs.forEach((t,i)=>{
+    t.addEventListener('click',()=>select(t));
+    t.addEventListener('keydown',e=>{
+      if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();const n=tabs[(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length];select(n);n.focus();}
+    });
+  });
+})();
+
+// Schedule
+(function(){
+  const days=[["Mon",20],["Tue",21],["Wed",22],["Thu",23],["Fri",24],["Sat",25],["Sun",26]];
+  const base=[
+    ["5:30","AM","Strength","Squat Block, Week 3","Marcus Hale",60,3],
+    ["6:30","AM","Conditioning","Engine Intervals","Dani Reyes",45,0],
+    ["7:30","AM","Boxing","Fundamentals","Theo Grant",50,6],
+    ["12:00","PM","Strength","Press & Pull","Marcus Hale",60,8],
+    ["5:30","PM","Conditioning","Sled & Row","Dani Reyes",45,2],
+    ["6:30","PM","Boxing","Combos & Bag Rounds","Theo Grant",50,4],
+    ["7:30","PM","Recovery","Mobility + Contrast","Priya Nair",40,9]
+  ];
+  const weekend=[
+    ["8:00","AM","Strength","Weekend Lift","Marcus Hale",60,5],
+    ["9:15","AM","Conditioning","Partner WOD","Dani Reyes",45,1],
+    ["10:30","AM","Recovery","Mobility + Contrast","Priya Nair",40,10]
+  ];
+  let day=0,filter='all';
+  const dEl=document.getElementById('days'),sEl=document.getElementById('sched'),cEl=document.getElementById('chips');
+  days.forEach(([d,n],i)=>{
+    const b=document.createElement('button');b.type='button';b.className='day';b.setAttribute('aria-pressed',i===0);
+    b.innerHTML='<small>'+d+'</small><span>'+n+'</span>';b.setAttribute('aria-label',d+' October '+n);
+    b.onclick=()=>{day=i;[...dEl.children].forEach((x,j)=>x.setAttribute('aria-pressed',j===i));render();};
+    dEl.appendChild(b);
+  });
+  cEl.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{filter=c.dataset.f;cEl.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===c));render();});
+  function render(){
+    const list=(day>=5?weekend:base).filter(r=>filter==='all'||r[2]===filter);
+    let h='<div class="row head"><span>Time</span><span>Class</span><span class="h-coach">Coach</span><span class="h-spots">Spots</span><span></span></div>';
+    if(!list.length)h+='<div class="empty">No '+filter+' classes on this day. Try another day.</div>';
+    list.forEach(r=>{
+      const full=r[6]===0,low=r[6]>0&&r[6]<=3;
+      h+='<div class="row"><div class="time">'+r[0]+'<small>'+r[1]+' &middot; '+r[5]+' min</small></div>'+
+      '<div class="cls"><b>'+r[3]+'</b><span class="tag">'+r[2]+'</span></div>'+
+      '<div class="coach"><span></span>'+r[4]+'</div>'+
+      '<div class="spots'+(low?' low':'')+'">'+(full?'<b>Full</b>':'<b>'+r[6]+'</b> left')+'</div>'+
+      (full?'<a class="btn full" aria-disabled="true">Waitlist</a>':'<a href="#trial" class="btn btn-volt">Book</a>')+'</div>';
+    });
+    sEl.innerHTML=h;
+  }
+  render();
+})();
+
+// Trial form
+document.getElementById('trialForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const req=[...this.querySelectorAll('[required]')];let ok=true;
+  req.forEach(i=>{const bad=!i.value.trim()||(i.type==='email'&&!/^\S+@\S+\.\S+$/.test(i.value));i.setAttribute('aria-invalid',bad);i.style.borderColor=bad?'#B3261E':'';if(bad)ok=false;});
+  if(ok){document.getElementById('formOk').classList.add('show');this.querySelector('button[type=submit]').disabled=true;}
+  else{req.find(i=>i.getAttribute('aria-invalid')==='true').focus();}
+});
+</script>
+</body>
+</html>

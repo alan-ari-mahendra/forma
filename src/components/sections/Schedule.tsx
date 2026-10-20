@@ -42,7 +42,7 @@ export function Schedule() {
                 type="button"
                 className="day"
                 aria-pressed={i === activeDay}
-                aria-label={`${d.short} October ${d.date}`}
+                aria-label={`${d.short} ${d.date}, October`}
                 onClick={() => setActiveDay(i)}
               >
                 <small>{d.short}</small>

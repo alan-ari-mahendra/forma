@@ -89,6 +89,7 @@ export function Programs() {
                   <small>Intensity</small>
                   <div
                     className="intensity"
+                    role="img"
                     aria-label={`Intensity ${p.intensity} of 5`}
                   >
                     {Array.from({ length: 5 }, (_, j) => (
